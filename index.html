@@ -1,53 +1,55 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>無農薬野菜はコチラ</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <title>helthy diet</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
-      <h1><a href="index.html"><img id="vegetables" src="images/vegetables.jpg" alt="新鮮な野菜">
-      </a>
-      </h1>
+      <h1>HELTHY DIET</h1>
+      <h4>一日の摂取カロリーを把握して健康的な生活を送ろう</h4>
     </header>
-    <div id="wrapper">
-      <div id="nav">
-        <ul>
-          <li> <a href="home.html">ナビ1</a> </li>
-          <li> <a href="#">ナビ2</a> </li>
-          <li> <a href="#">ナビ3</a> </li>
-          <li> <a href="#">ナビ4</a> </li>
-        </ul>
-      </div>
-      <div id="container">
-        <div id="main">
-          <div class="post">
-            <p>文章はここだよ</p>
-          </div>
-          <div class="post clearfix">
-            <h2>体に優しい無農薬野菜</h2>
-            <img class="left" src="images/farmer.jpg" alt="生産者">
-            <p>
-              コンテンツ1の本文はここ
-              コンテンツ1の本文はここ
-            </p>
-            <p> <a href="#">→生産者を探す</a> </p>
-          </div>
-          <div class="post clearfix">
-            <h2>安心して売れる販売経路</h2>
-            <img class="right" src="images/market.jpg" alt="生産者">
-            <p>
-              コンテンツ2の本文はここ
-              コンテンツ2の本文はここ
-            </p>
-            <p> <a href="#">→市場を探す</a> </p>
-          </div>
-        </div>
+    <div class="main">
+      <section>
+        <h3>使い方</h3>
+        <p>①下から「食べたもの」「カロリー」「個数」を入力して登録！<br>　カロリーテーブルにカロリーが表示されるよ</p>
+        <p>②一日で食べたものをすべて登録し終わったら「計測」をクリック！</p>
+      </section>
+      <form id="form1" action="#" method="post">
+        <p>食べたもの</p>
+        <input type="text" name="food" placeholder="ex) おにぎり" required>
+        <p>カロリー(kcal)</p>
+        <input type="number" name="cal" placeholder="ex) 180" required>
+        <p>食べた個数</p>
+        <input type="number" name="num" value="1">
+        <input type="submit" name="submit" value="登録">
+      </form>
+      <section>
+        <h3>カロリーテーブル</h3>
+        <table id="table">
+          <!-- <tr>
+            <th>おにぎり</th>
+            <td>360kcal</td>
+          </tr>
+          <tr>
+            <th>ラーメン</th>
+            <td>600kcal</td>
+          </tr> -->
+        </table>
+        <form id="form2" action="#" method="post">
+          <input type="submit" name="submit" value="計測">
+        </form>
+      </section>
+      <div class="result">
+        <p>計<span id="your_cal">○○○</span>kcal</p>
+        <p id="message"></p>
       </div>
     </div>
     <footer>
-      <p>&copy; 2020 all right reserved.</p>
+      <p>&copy; Let's enjoy your helthy diet!</p>
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
