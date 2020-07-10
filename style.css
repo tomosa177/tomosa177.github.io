@@ -1,79 +1,31 @@
 @charset "UTF-8";
 
 body {
-  width: 80%;
+  text-align: center;
+  width: 70%;
   margin: 0 auto;
   padding: 0;
   background-color: #ccc;
   color: #333;
+  font-family: 'Fondamento', cursive;
   font-size: 15px;
-  line-height: 2;
 }
 p,h1,h2,h3,h4,h5,h6 {
   margin: 0;
 }
-h3 {
-  border-left: 8px solid #9cb4a4;
-  padding-left: 15px;
+footer {
+  margin-top: 50px;
+  font-size: 0.8em;
 }
-header {
-  padding-bottom: 40px;
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-header h4 {
-  font-weight: normal;
+main img {
+  margin: 20px 0;
 }
-.howto p {
-  font-size: 0.9em;
-}
-#form1 {
-  width: 40%;
-  margin: 30px 0;
-  background-color: #ffd;
-}
-#form1 p, .result p {
-  font-weight: bold;
-}
-#form1 input, #form1 p {
-  margin-left: 10%;
-}
-.btn {
-  background-color: #009cd3;
-  color: white;
-  font-size: 1.2em;
-  line-height: 30px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-.btn:hover {
-  background-color: white;
-  color: #009cd3;
-}
-#table {
-  margin-top: 20px;
-  border-spacing: 0;
-  border-collapse: collapse;
-}
-#table th {
-  background-color: white;
-  width: 50%;
-  padding: 6px 0;
-  border: 1px solid #aaa;
-}
-#table td {
-  background-color: white;
-  width: 30%;
-  border: 1px solid #aaa;
-}
-#form2 .btn {
-  margin-top: 30px;
-}
-.result p {
-  font-size: 1.2em;
-}
-.result #message {
-  font-size: 1.4em;
-}
-footer p {
-  font-size: 0.7em;
-  text-align: center;
+.hidden {
+  opacity: 0;
 }
