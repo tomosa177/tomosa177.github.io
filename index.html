@@ -2,52 +2,28 @@
 <html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>helthy diet</title>
+    <title>concentration</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
-      <h1>HELTHY DIET</h1>
-      <h4>一日の摂取カロリーを把握して健康的な生活を送ろう</h4>
+      <h1>CONCENTRATION</h1>
+      <p>Choose the same cards.</p>
     </header>
-    <div class="main">
-      <section class="howto">
-        <h3>使い方</h3>
-        <p>①下から「食べたもの」「カロリー」「個数」を入力して登録！<br>　カロリーテーブルにカロリーが表示されるよ</p>
-        <p>②一日で食べたものをすべて登録し終わったら「計測」をクリック！</p>
-      </section>
-      <form id="form1" action="#" method="post">
-        <p>食べたもの</p>
-        <input type="text" name="food" placeholder="ex) おにぎり" required>
-        <p>カロリー(kcal)</p>
-        <input type="number" name="cal" placeholder="ex) 180" required>
-        <p>食べた個数</p>
-        <input type="number" name="num" value="1">
-        <input class="btn" type="submit" name="submit" value="登録">
-      </form>
-      <section>
-        <h3>カロリーテーブル</h3>
-        <table id="table">
-          <!-- <tr>
-            <th>おにぎり</th>
-            <td>360kcal</td>
-          </tr>
-          <tr>
-            <th>ラーメン</th>
-            <td>600kcal</td>
-          </tr> -->
-        </table>
-        <form id="form2" action="#" method="post">
-          <input class="btn" type="submit" name="submit" value="計測">
-        </form>
-      </section>
-      <div class="result">
-        <p>計<span id="your_cal">○○○</span>kcal</p>
-        <p id="message"></p>
-      </div>
+    <main>
+      <img id="img0" src="images/card.jpg" alt="card">
+      <img id="img1" src="images/card.jpg" alt="card">
+      <img id="img2" src="images/card.jpg" alt="card">
+      <img id="img3" src="images/card.jpg" alt="card">
+      <img id="img4" src="images/card.jpg" alt="card">
+      <img id="img5" src="images/card.jpg" alt="card">
+    </main>
+    <div id="message">
+      <p></p>
     </div>
     <footer>
-      <p>&copy; Let's enjoy your helthy diet!</p>
+      <p>&copy; concentration...</p>
     </footer>
 
     <script src="index.js"></script>
